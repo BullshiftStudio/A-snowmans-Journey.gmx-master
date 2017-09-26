@@ -95,6 +95,7 @@
     <instance objName="obj_Tree_1" x="1856" y="800" name="inst_C3240CB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree_1" x="2464" y="800" name="inst_56121029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Tree_Front" x="3040" y="864" name="inst_79CECC13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Evil_Snowman" x="1088" y="992" name="inst_0DDB780E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
