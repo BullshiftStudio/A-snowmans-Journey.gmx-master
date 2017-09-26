@@ -40,6 +40,7 @@
   <scripts name="scripts">
     <script>scripts\PROJECT_INFO.gml</script>
     <script>scripts\UPDATE_LOG.gml</script>
+    <script>scripts\scr_Part_Snow.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_Button</font>
@@ -48,6 +49,7 @@
     <objects name="Snowman Assets">
       <object>objects\obj_Snowman</object>
       <object>objects\obj_Health_Bar</object>
+      <object>objects\obj_Snowball</object>
     </objects>
     <objects name="Environment Assets">
       <object>objects\obj_Tree_1</object>
@@ -65,8 +67,11 @@
     <objects name="Enemy Assets">
       <object>objects\obj_Evil_Snowman</object>
     </objects>
-    <object>objects\obj_Controller</object>
-    <object>objects\cder</object>
+    <objects name="Controller Assets">
+      <object>objects\cder</object>
+      <object>objects\obj_Particle_System</object>
+      <object>objects\obj_Controller</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
