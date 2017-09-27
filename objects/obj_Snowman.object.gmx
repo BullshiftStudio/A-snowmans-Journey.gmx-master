@@ -94,6 +94,12 @@ if (!place_free(x, y + 1) &amp;&amp; (keyboard_check(vk_space)) &amp;&amp; (thro
 
 }
 
+if (!place_free(x, y + 1) &amp;&amp; (keyboard_check(vk_up)) &amp;&amp; (throwing = false)) {
+
+    vspeed = -jspd;
+
+}
+
 //This code is temporary...
 if (keyboard_check_released(vk_anykey)) { 
 
@@ -123,19 +129,25 @@ if (keyboard_check_released(vk_anykey)) {
             <kind>1</kind>
             <string>///Throw Snowballs
 
-var throw
-throw = (mouse_check_button(mb_left) &amp;&amp; (throw_cooldown &lt;= 0));
+if (mouse_check_button(mb_left) &amp;&amp; (mouse_x &gt; x)) {
 
-if (throw) {
-
-    instance_create(x, y, obj_Snowball);
-    throw_cooldown = 12;
+    sprite_index = spr_Snowman_Throw;
+    image_speed = 0.2;
     throwing = true;
+    
+    if (throw_cooldown &lt;= 0) {
+    
+        instance_create(x, y, obj_Snowball);
+        sprite_index = spr_Snowman;
+        throw_cooldown = 12;
+    
+    }
 
-}
+} else {
 
-if (mouse_check_button_released(mb_left)) {
+    sprite_index = spr_Snowman;
     throwing = false;
+
 }
 
 throw_cooldown -= 1;

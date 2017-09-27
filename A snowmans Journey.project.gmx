@@ -10,9 +10,9 @@
       <sprite>sprites\spr_Snowman</sprite>
       <sprite>sprites\spr_Snowman_Walk</sprite>
       <sprite>sprites\spr_Snowman_Walk_Bw</sprite>
+      <sprite>sprites\spr_Snowman_Throw</sprite>
       <sprite>sprites\spr_Health</sprite>
       <sprite>sprites\spr_Health_Bar</sprite>
-      <sprite>sprites\spr_snowman_throw</sprite>
     </sprites>
     <sprites name="Environment Assets">
       <sprite>sprites\spr_Water</sprite>
@@ -26,8 +26,7 @@
       <sprite>sprites\spr_floorsnow</sprite>
       <sprite>sprites\spr_snow_extra</sprite>
       <sprite>sprites\spr_Snowball</sprite>
-      <sprite>sprites\spr_candycane</sprite>
-      <sprite>sprites\spr_candycane_flip</sprite>
+      <sprite>sprites\spr_Candycane</sprite>
     </sprites>
     <sprites name="Option and Button Assets">
       <sprite>sprites\spr_Button</sprite>
@@ -69,12 +68,11 @@
       <object>objects\obj_Wall_Collision</object>
       <object>objects\obj_floorsnow</object>
       <object>objects\obj_snow_extra</object>
-      <object>objects\obj_candycane</object>
-      <object>objects\obj_candycane_flip</object>
+      <object>objects\obj_Candycane</object>
     </objects>
     <objects name="Option and Button Assets">
-      <object>objects\obj_play</object>
-      <object>objects\obj_exit</object>
+      <object>objects\obj_Play</object>
+      <object>objects\obj_Exit</object>
     </objects>
     <objects name="Enemy Assets">
       <object>objects\obj_Evil_Snowman</object>

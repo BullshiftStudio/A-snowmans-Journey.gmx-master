@@ -103,7 +103,7 @@ image_yscale = image_xscale;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 1.3;
+            <string>image_xscale = 1.1;
 </string>
           </argument>
         </arguments>
