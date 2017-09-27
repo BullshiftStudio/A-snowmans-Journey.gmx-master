@@ -12,6 +12,7 @@
       <sprite>sprites\spr_Snowman_Walk_Bw</sprite>
       <sprite>sprites\spr_Health</sprite>
       <sprite>sprites\spr_Health_Bar</sprite>
+      <sprite>sprites\spr_snowman_throw</sprite>
     </sprites>
     <sprites name="Environment Assets">
       <sprite>sprites\spr_Water</sprite>
@@ -30,6 +31,7 @@
     </sprites>
     <sprites name="Option and Button Assets">
       <sprite>sprites\spr_Button</sprite>
+      <sprite>sprites\spr_exit</sprite>
     </sprites>
     <sprites name="Enemy Assets">
       <sprite>sprites\spr_Evil_Snowman</sprite>
@@ -71,7 +73,8 @@
       <object>objects\obj_candycane_flip</object>
     </objects>
     <objects name="Option and Button Assets">
-      <object>objects\obj_Button</object>
+      <object>objects\obj_play</object>
+      <object>objects\obj_exit</object>
     </objects>
     <objects name="Enemy Assets">
       <object>objects\obj_Evil_Snowman</object>
