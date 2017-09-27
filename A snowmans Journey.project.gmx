@@ -27,6 +27,10 @@
       <sprite>sprites\spr_snow_extra</sprite>
       <sprite>sprites\spr_Snowball</sprite>
       <sprite>sprites\spr_Candycane</sprite>
+      <sprite>sprites\spr_wall_block</sprite>
+      <sprite>sprites\spr_ladder</sprite>
+      <sprite>sprites\spr_button_trigger</sprite>
+      <sprite>sprites\spr_teleport</sprite>
     </sprites>
     <sprites name="Option and Button Assets">
       <sprite>sprites\spr_Button</sprite>
@@ -69,6 +73,10 @@
       <object>objects\obj_floorsnow</object>
       <object>objects\obj_snow_extra</object>
       <object>objects\obj_Candycane</object>
+      <object>objects\obj_wall_block</object>
+      <object>objects\obj_ladder</object>
+      <object>objects\obj_button_trigger</object>
+      <object>objects\obj_teleport</object>
     </objects>
     <objects name="Option and Button Assets">
       <object>objects\obj_Play</object>
