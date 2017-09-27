@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_Controller" x="0" y="0" name="inst_98A5DC0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Button" x="1088" y="336" name="inst_36A528FC" locked="0" code="txt = &quot;PLAY&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Button" x="1088" y="336" name="inst_36A528FC" locked="0" code="txt = &quot;PLAY&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Button" x="1088" y="464" name="inst_206BE9BB" locked="0" code="txt = &quot;QUIT&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

@@ -22,6 +22,9 @@
       <sprite>sprites\spr_Snow_Floor</sprite>
       <sprite>sprites\spr_Tree_1</sprite>
       <sprite>sprites\spr_Spring_jump</sprite>
+      <sprite>sprites\spr_floorsnow</sprite>
+      <sprite>sprites\spr_snow_extra</sprite>
+      <sprite>sprites\spr_Snowball</sprite>
     </sprites>
     <sprites name="Option and Button Assets">
       <sprite>sprites\spr_Button</sprite>
@@ -60,6 +63,8 @@
       <object>objects\obj_Water</object>
       <object>objects\obj_Snow_Floor</object>
       <object>objects\obj_Wall_Collision</object>
+      <object>objects\obj_floorsnow</object>
+      <object>objects\obj_snow_extra</object>
     </objects>
     <objects name="Option and Button Assets">
       <object>objects\obj_Button</object>
@@ -75,7 +80,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
-    <room>rooms\rm_Play</room>
+    <room>rooms\rm_tutorial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -131,7 +131,7 @@ image_yscale = image_xscale;
 switch (txt) {
 
     case "PLAY":
-        room_goto(rm_Play);
+        room_goto(rm_tutorial);
     break;
     
     case "QUIT":
