@@ -3,7 +3,7 @@
   <spriteName>spr_Snowman</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Initialize Snowman - Player
 
-grav = 0.3;
+grav = 0.7;
 hspd = 0;
 vspd = 0;
 jspd = 12;
@@ -38,7 +38,34 @@ throw_cooldown = 12;
 throwing = false;
 
 sprite_index = spr_Snowman;
+global.powerUp = 0; //No power up when start
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///No Fire Powerup
+
+global.powerUp = 0;
 
 </string>
           </argument>
@@ -64,56 +91,51 @@ sprite_index = spr_Snowman;
             <kind>1</kind>
             <string>///Movement
 
-if (place_free(x, y + 1)) {
+var rkey = keyboard_check(vk_right);
+var lkey = keyboard_check(vk_left);
+var jkey = keyboard_check(vk_up);
 
-    gravity = 0.6;
-    gravity_direction = 270;
+if (place_meeting(x, y + 1, obj_Snow_Floor)) {
+
+    vspd = 0;
+    
+    if (jkey) {
+    
+        vspd = -jspd;
+    
+    }
 
 } else {
 
-    gravity = 0;
-    gravity_direction = 270;
+    if (vspd &lt; 10) {
+    
+        vspd += grav;
+    
+    }
 
 }
 
-
-if (place_free(x - 4, y) &amp;&amp; (keyboard_check(vk_left))) {
-
-    x -= spd;
-    sprite_index = spr_Snowman_Walk_Bw;
-
-}
-
-if (place_free(x + 4, y) &amp;&amp; (keyboard_check(vk_right))) {
-
-    x += spd;
+//Right or Left
+if (rkey) { 
+    hspd = spd; 
     sprite_index = spr_Snowman_Walk;
-
+}
+if (lkey) { 
+    hspd = -spd; 
+    sprite_index = spr_Snowman_Walk_Bw;
 }
 
-if (!place_free(x, y + 1) &amp;&amp; (keyboard_check(vk_space)) &amp;&amp; (throwing = false)) {
-
-    vspeed = -jspd;
-
-}
-
-if (!place_free(x, y + 1) &amp;&amp; (keyboard_check(vk_up)) &amp;&amp; (throwing = false)) {
-
-    vspeed = -jspd;
-
-}
-
-//This code is temporary...
-if (keyboard_check_released(vk_anykey)) { 
-
+//Not moving
+if ((!rkey &amp;&amp; !lkey) || (rkey &amp;&amp; lkey)) {
+    hspd = 0;
     sprite_index = spr_Snowman;
-
 }
+
+scr_Collisions();
 
 //Ladder Climbing
 if (place_meeting(x, y, obj_Ladder) &amp;&amp; (keyboard_check(vk_up))) {
-    gravity = 0;
-    y -= 1;
+    vspd -= 0.8;
 }
 
 
@@ -167,6 +189,76 @@ throw_cooldown -= 1;
 </string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Death
+
+if (hp &lt;= 0) {
+
+    room_restart();
+    //More will be added here...
+
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Enemy_Snowball">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Take Damage
+
+part_particles_create(global.ps, choose(x, x+10, x-10), choose(y, y+10, y-10), global.pt_snow, 12);
+scr_TakeDamage(choose(10, 13, 17));
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="obj_Button_Trigger">
@@ -248,6 +340,47 @@ vspeed = 0;
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Powerup_Fire">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Add Fire Powerup
+
+global.powerUp = 1; //Fire
+alarm[0] = 600;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

@@ -72,7 +72,7 @@ if (place_free(x, y + 1)) {
 
 }
 
-if (distance_to_object(obj_Snowman) &lt;= 500) {
+if (distance_to_object(obj_Snowman) &lt;= 600) {
 
     if self.x &lt; obj_Snowman.x {self.image_index = 0; }
     if self.x &gt; obj_Snowman.x {self.image_index = 1; }
@@ -82,6 +82,49 @@ if (distance_to_object(obj_Snowman) &lt;= 500) {
     image_index = 0;
 
 }
+
+//Death
+if (hp &lt;= 0) {
+
+    instance_destroy();
+    //More will be added here...
+
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///AI Firing
+
+if (distance_to_object(obj_Snowman) &lt;= 550) {
+
+    if (throw_cooldown &lt;= 0) {
+    
+        instance_create(x, y, obj_Enemy_Snowball);
+        throw_cooldown = 14;
+    
+    }
+
+}
+
+throw_cooldown -= 1;
 
 </string>
           </argument>
@@ -113,6 +156,58 @@ vspeed = 0;
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Snowball">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Take Damage
+
+if (global.powerUp = 0) {
+
+    part_particles_create(global.ps, choose(x, x+10, x-10), choose(y, y+10, y-10), global.pt_snow, 12);
+    hp -= choose(13, 17, 19);
+
+}
+
+if (global.powerUp = 1) {
+
+    part_particles_create(global.ps, choose(x, x+10, x-10), choose(y, y+10, y-10), global.pt_snow, 12);
+    hp -= choose(15, 19, 22);
+
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

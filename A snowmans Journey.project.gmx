@@ -8,8 +8,9 @@
   </NewExtensions>
   <sounds name="sound">
     <sounds name="MMtunes">
-      <sound>sound\Jinge_Bells_Calm_</sound>
+      <sound>sound\Jinge_Bells_Calm</sound>
     </sounds>
+    <sound>sound\snd_Ice_Break</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Snowman Assets">
@@ -20,6 +21,7 @@
       <sprite>sprites\spr_Health</sprite>
       <sprite>sprites\spr_Health_Bar</sprite>
       <sprite>sprites\spr_powerup</sprite>
+      <sprite>sprites\spr_HUD_Freeze</sprite>
     </sprites>
     <sprites name="Environment Assets">
       <sprite>sprites\spr_Water</sprite>
@@ -47,11 +49,11 @@
     <sprites name="Enemy Assets">
       <sprite>sprites\spr_Evil_Snowman</sprite>
     </sprites>
+    <sprites name="Bosses Assets">
+      <sprite>sprites\spr_Evil_King</sprite>
+    </sprites>
     <sprite>sprites\spr_Brick</sprite>
     <sprite>sprites\spr_Collision</sprite>
-    <sprites name="Bosses Assets">
-      <sprite>sprites\spr_evilsm_king</sprite>
-    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\b_Snow</background>
@@ -64,6 +66,8 @@
     <script>scripts\PROJECT_INFO.gml</script>
     <script>scripts\UPDATE_LOG.gml</script>
     <script>scripts\scr_Part_Snow.gml</script>
+    <script>scripts\scr_Collisions.gml</script>
+    <script>scripts\scr_TakeDamage.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_Button</font>
@@ -72,9 +76,10 @@
   <objects name="objects">
     <objects name="Snowman Assets">
       <object>objects\obj_Snowman</object>
-      <object>objects\obj_Health_Bar</object>
+      <object>objects\obj_HUD</object>
       <object>objects\obj_Snowball</object>
-      <object>objects\obj_powerup</object>
+      <object>objects\obj_Powerup_Fire</object>
+      <object>objects\obj_HUD_Freeze</object>
     </objects>
     <objects name="Environment Assets">
       <object>objects\obj_Tree_1</object>
@@ -100,17 +105,19 @@
     </objects>
     <objects name="Enemy Assets">
       <object>objects\obj_Evil_Snowman</object>
+      <object>objects\obj_Enemy_Snowball</object>
     </objects>
     <objects name="Controller Assets">
       <object>objects\cder</object>
       <object>objects\obj_Particle_System</object>
       <object>objects\obj_Controller</object>
+      <object>objects\obj_InGameController</object>
     </objects>
     <objects name="bosses Assets">
       <object>objects\obj_kingsm_boss</object>
     </objects>
     <objects name="MMtunes">
-      <object>objects\obj_jingle_bells</object>
+      <object>objects\obj_Menu_Radio</object>
     </objects>
   </objects>
   <rooms name="rooms">
