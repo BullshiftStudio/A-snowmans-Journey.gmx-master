@@ -41,6 +41,14 @@
       <sprite>sprites\spr_Ladder</sprite>
       <sprite>sprites\spr_Button_Trigger</sprite>
       <sprite>sprites\spr_Teleport</sprite>
+      <sprites name="Numbers">
+        <sprite>sprites\spr_Number_0</sprite>
+        <sprite>sprites\spr_Number_1</sprite>
+        <sprite>sprites\spr_Number_2</sprite>
+        <sprite>sprites\spr_Number_3</sprite>
+        <sprite>sprites\spr_Number_4</sprite>
+        <sprite>sprites\spr_Number_5</sprite>
+      </sprites>
     </sprites>
     <sprites name="Option and Button Assets">
       <sprite>sprites\spr_Button</sprite>
@@ -60,6 +68,7 @@
     <background>background\b_Menu</background>
     <background>background\cloud_blue</background>
     <background>background\cloud_red</background>
+    <background>background\b_Tutorial_Complete</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -98,6 +107,14 @@
       <object>objects\obj_Ladder</object>
       <object>objects\obj_Button_Trigger</object>
       <object>objects\obj_Teleport</object>
+      <objects name="Numbers">
+        <object>objects\obj_Number_0</object>
+        <object>objects\obj_Number_1</object>
+        <object>objects\obj_Number_2</object>
+        <object>objects\obj_Number_3</object>
+        <object>objects\obj_Number_4</object>
+        <object>objects\obj_Number_5</object>
+      </objects>
     </objects>
     <objects name="Option and Button Assets">
       <object>objects\obj_Play</object>
@@ -113,8 +130,8 @@
       <object>objects\obj_Controller</object>
       <object>objects\obj_InGameController</object>
     </objects>
-    <objects name="bosses Assets">
-      <object>objects\obj_kingsm_boss</object>
+    <objects name="Boss Assets">
+      <object>objects\obj_King_Boss</object>
     </objects>
     <objects name="MMtunes">
       <object>objects\obj_Menu_Radio</object>
@@ -122,7 +139,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
-    <room>rooms\rm_tutorial</room>
+    <room>rooms\rm_Tutorial</room>
+    <room>rooms\rm_Tutorial_Complete</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
