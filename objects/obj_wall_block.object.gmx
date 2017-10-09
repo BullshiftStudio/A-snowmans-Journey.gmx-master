@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>passed = false;
+
+image_index = 0;
+image_speed = 0;
+
 </string>
           </argument>
         </arguments>
@@ -49,6 +53,11 @@
           <argument>
             <kind>1</kind>
             <string>///Move Block
+
+if (distance_to_object(obj_Snowman) &lt;= 50) { image_index = 1; image_speed = 0; } else {
+    image_index = 0;
+    image_speed = 0;
+}
 
 if (distance_to_object(obj_Snowman) &lt;= 50) &amp;&amp; (keyboard_check_pressed(vk_enter)) {
 
