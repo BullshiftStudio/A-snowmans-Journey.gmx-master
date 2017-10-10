@@ -107,6 +107,7 @@
     <instance objName="obj_Number_2" x="6256" y="2192" name="inst_F642EB4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Number_3" x="9568" y="1936" name="inst_C74E0FCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Number_4" x="11312" y="1408" name="inst_5BC76B6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="shader_obj" x="128" y="32" name="inst_21A67FEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -5,6 +5,7 @@
   </Configs>
   <NewExtensions>
     <extension index="0">extensions\Cloud Background</extension>
+    <extension index="1">extensions\Chromatic Aberration Shader</extension>
   </NewExtensions>
   <sounds name="sound">
     <sounds name="MMtunes">
@@ -69,6 +70,7 @@
     <background>background\cloud_blue</background>
     <background>background\cloud_red</background>
     <background>background\b_Tutorial_Complete</background>
+    <background>background\b_LevelFinish</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -78,6 +80,9 @@
     <script>scripts\scr_Collisions.gml</script>
     <script>scripts\scr_TakeDamage.gml</script>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\sh_aberration.shader</shader>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\fnt_Button</font>
     <font>fonts\fnt_Timer</font>
@@ -136,6 +141,7 @@
     <objects name="MMtunes">
       <object>objects\obj_Menu_Radio</object>
     </objects>
+    <object>objects\shader_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
