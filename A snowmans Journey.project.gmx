@@ -63,6 +63,12 @@
     </sprites>
     <sprite>sprites\spr_Brick</sprite>
     <sprite>sprites\spr_Collision</sprite>
+    <sprites name="Tutorial Assets">
+      <sprite>sprites\spr_Step_1</sprite>
+      <sprite>sprites\spr_Step_2</sprite>
+      <sprite>sprites\spr_Step_3</sprite>
+      <sprite>sprites\spr_Step_4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\b_Snow</background>
@@ -70,7 +76,7 @@
     <background>background\cloud_blue</background>
     <background>background\cloud_red</background>
     <background>background\b_Tutorial_Complete</background>
-    <background>background\b_LevelFinish</background>
+    <background>background\b_Level_Complete</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -141,12 +147,20 @@
     <objects name="MMtunes">
       <object>objects\obj_Menu_Radio</object>
     </objects>
-    <object>objects\shader_obj</object>
+    <objects name="Tutorial Assets">
+      <object>objects\obj_Step_1</object>
+      <object>objects\obj_Step_2</object>
+      <object>objects\obj_Step_3</object>
+      <object>objects\obj_Step_4</object>
+      <object>objects\obj_Tutorial_Complete</object>
+    </objects>
+    <object>objects\obj_Aberration</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_Tutorial</room>
     <room>rooms\rm_Tutorial_Complete</room>
+    <room>rooms\rm_Level_Select</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
