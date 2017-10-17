@@ -119,6 +119,9 @@
       <sprite>sprites\spr_Step_3</sprite>
       <sprite>sprites\spr_Step_4</sprite>
     </sprites>
+    <sprites name="LevelSelectUI">
+      <sprite>sprites\spr_LevelSelect</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\b_Snow</background>
@@ -207,9 +210,13 @@
       <object>objects\obj_Tutorial_Complete</object>
     </objects>
     <object>objects\obj_Aberration</object>
+    <objects name="LevelSelectUI">
+      <object>objects\obj_LevelSelect</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Boot</room>
+    <room>rooms\rm_OnwardsAndUpwards</room>
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_Tutorial</room>
     <room>rooms\rm_Tutorial_Complete</room>
