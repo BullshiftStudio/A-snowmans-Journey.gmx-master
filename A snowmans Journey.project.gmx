@@ -216,11 +216,11 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Boot</room>
-    <room>rooms\rm_OnwardsAndUpwards</room>
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_Tutorial</room>
     <room>rooms\rm_Tutorial_Complete</room>
     <room>rooms\rm_Level_Select</room>
+    <room>rooms\rm_OnwardsAndUpwards</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

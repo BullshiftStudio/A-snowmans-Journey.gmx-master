@@ -101,7 +101,6 @@
     <instance objName="obj_snow_extra" x="6240" y="2624" name="inst_AF377B27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snow_extra" x="6704" y="1664" name="inst_0CA3DC0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Step_4" x="6736" y="880" name="inst_290C288E" locked="0" code="" scaleX="2.24000000953674" scaleY="2.33333325386047" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Aberration" x="128" y="32" name="inst_BF630477" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
