@@ -52,6 +52,34 @@
   </views>
   <instances>
     <instance objName="obj_LevelSelect" x="640" y="128" name="inst_B32E05BB" locked="0" code="" scaleX="0.691999971866608" scaleY="0.540000021457672" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="96" y="256" name="inst_92DB8747" locked="0" code="txt = &quot;1&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="176" y="256" name="inst_4FA336D1" locked="0" code="txt = &quot;2&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="256" y="256" name="inst_D77E406F" locked="0" code="txt = &quot;3&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="336" y="256" name="inst_D63B8A64" locked="0" code="txt = &quot;4&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="416" y="256" name="inst_C4EA1959" locked="0" code="txt = &quot;5&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="496" y="256" name="inst_74B698F5" locked="0" code="txt = &quot;6&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="576" y="256" name="inst_DAE99674" locked="0" code="txt = &quot;7&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="656" y="256" name="inst_F4113C7C" locked="0" code="txt = &quot;8&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="736" y="256" name="inst_348FFC75" locked="0" code="txt = &quot;9&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="816" y="256" name="inst_97A147D5" locked="0" code="txt = &quot;10&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="896" y="256" name="inst_D663A19A" locked="0" code="txt = &quot;11&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="976" y="256" name="inst_FB4DCB69" locked="0" code="txt = &quot;12&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="1056" y="256" name="inst_80417753" locked="0" code="txt = &quot;13&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="1136" y="256" name="inst_9BB27101" locked="0" code="txt = &quot;14&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="96" y="336" name="inst_AF57E6B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="176" y="336" name="inst_539B7711" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="256" y="336" name="inst_18E2D2BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="336" y="336" name="inst_3BEB1DE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="416" y="336" name="inst_4173A0F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="496" y="336" name="inst_3C19C7C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="576" y="336" name="inst_F6E1978B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="656" y="336" name="inst_08A8ECAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="736" y="336" name="inst_99593D8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="816" y="336" name="inst_4AE7A386" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="896" y="336" name="inst_E7F19D74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="976" y="336" name="inst_10D0A5BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="1056" y="336" name="inst_A391CF40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="1136" y="336" name="inst_B38E6125" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

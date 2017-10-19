@@ -104,6 +104,7 @@
     <sprites name="Option and Button Assets">
       <sprite>sprites\spr_Button</sprite>
       <sprite>sprites\spr_exit</sprite>
+      <sprite>sprites\spr_LevelSelect_Button</sprite>
     </sprites>
     <sprites name="Enemy Assets">
       <sprite>sprites\spr_Evil_Snowman</sprite>
@@ -184,6 +185,7 @@
     <objects name="Option and Button Assets">
       <object>objects\obj_Play</object>
       <object>objects\obj_Exit</object>
+      <object>objects\obj_LevelSelect_Button</object>
     </objects>
     <objects name="Enemy Assets">
       <object>objects\obj_Evil_Snowman</object>
@@ -217,10 +219,12 @@
   <rooms name="rooms">
     <room>rooms\rm_Boot</room>
     <room>rooms\rm_Menu</room>
-    <room>rooms\rm_OnwardsAndUpwards</room>
     <room>rooms\rm_Tutorial</room>
     <room>rooms\rm_Tutorial_Complete</room>
-    <room>rooms\rm_Level_Select</room>
+    <rooms name="Levels">
+      <room>rooms\rm_Level_Select</room>
+      <room>rooms\rm_Level_1</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

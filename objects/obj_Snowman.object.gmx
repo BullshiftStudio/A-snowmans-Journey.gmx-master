@@ -27,11 +27,14 @@
             <kind>1</kind>
             <string>///Initialize Snowman - Player
 
-grav = 0.7;
+grav = 0.8;
 hspd = 0;
 vspd = 0;
-jspd = 12;
+jspd = 20;
 spd = 7;
+
+jumps = 0;
+jumpsMax = 2;
 
 hp = 100;
 throw_cooldown = 12;
@@ -93,26 +96,23 @@ global.powerUp = 0;
 
 var rkey = keyboard_check(vk_right);
 var lkey = keyboard_check(vk_left);
-var jkey = keyboard_check(vk_up);
+var jkey = keyboard_check_pressed(vk_up);
 
 if (place_meeting(x, y + 1, obj_Snow_Floor)) {
 
-    vspd = 0;
-    
-    if (jkey) {
-    
-        vspd = -jspd;
-    
-    }
+    jumps = 2;
 
-} else {
+}
 
-    if (vspd &lt; 10) {
-    
-        vspd += grav;
-    
-    }
+if (vspd &lt; 10) {  
+    vspd += grav;   
+}
+ 
+if ((jkey) &amp;&amp; (jumps &gt; 0)) {
 
+    vspd = -jspd;
+    jumps -= 1;
+    
 }
 
 //Right or Left
