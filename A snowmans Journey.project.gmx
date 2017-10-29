@@ -103,8 +103,11 @@
     </sprites>
     <sprites name="Option and Button Assets">
       <sprite>sprites\spr_Button</sprite>
+      <sprite>sprites\spr_LvlSlct</sprite>
+      <sprite>sprites\spr_Settings</sprite>
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_LevelSelect_Button</sprite>
+      <sprite>sprites\spr_back</sprite>
     </sprites>
     <sprites name="Enemy Assets">
       <sprite>sprites\spr_Evil_Snowman</sprite>
@@ -119,6 +122,9 @@
       <sprite>sprites\spr_Step_2</sprite>
       <sprite>sprites\spr_Step_3</sprite>
       <sprite>sprites\spr_Step_4</sprite>
+      <sprite>sprites\spr_Step_5</sprite>
+      <sprite>sprites\spr_Step_6</sprite>
+      <sprite>sprites\spr_Step_7</sprite>
     </sprites>
     <sprites name="LevelSelectUI">
       <sprite>sprites\spr_LevelSelect</sprite>
@@ -184,8 +190,11 @@
     </objects>
     <objects name="Option and Button Assets">
       <object>objects\obj_Play</object>
+      <object>objects\obj_levelslct</object>
+      <object>objects\obj_back</object>
       <object>objects\obj_Exit</object>
       <object>objects\obj_LevelSelect_Button</object>
+      <object>objects\obj_settings</object>
     </objects>
     <objects name="Enemy Assets">
       <object>objects\obj_Evil_Snowman</object>
@@ -209,6 +218,9 @@
       <object>objects\obj_Step_2</object>
       <object>objects\obj_Step_3</object>
       <object>objects\obj_Step_4</object>
+      <object>objects\obj_Step_5</object>
+      <object>objects\obj_Step_6</object>
+      <object>objects\obj_Step_7</object>
       <object>objects\obj_Tutorial_Complete</object>
     </objects>
     <object>objects\obj_Aberration</object>
@@ -224,6 +236,9 @@
     <rooms name="Levels">
       <room>rooms\rm_Level_Select</room>
       <room>rooms\rm_Level_1</room>
+      <room>rooms\rm_Level_2</room>
+      <room>rooms\rm_Level_3</room>
+      <room>rooms\rm_level_4BOSS</room>
     </rooms>
   </rooms>
   <help>
