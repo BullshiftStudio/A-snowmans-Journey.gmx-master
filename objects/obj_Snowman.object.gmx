@@ -240,7 +240,7 @@ if (hp &lt;= 0) {
             <string>///Take Damage
 
 part_particles_create(global.ps, choose(x, x+10, x-10), choose(y, y+10, y-10), global.pt_snow, 12);
-scr_TakeDamage(choose(10, 13, 17));
+scr_TakeDamage(choose(5, 10, 13));
 
 </string>
           </argument>
@@ -278,7 +278,7 @@ scr_TakeDamage(choose(10, 13, 17));
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next();
+            <string>room_goto(rm_Level_Complete);
 </string>
           </argument>
         </arguments>

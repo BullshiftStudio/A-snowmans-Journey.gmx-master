@@ -3,8 +3,8 @@
   <caption></caption>
   <width>9000</width>
   <height>3000</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -107,12 +107,13 @@
     <instance objName="obj_Number_3" x="6304" y="1984" name="inst_85515FA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Number_5" x="96" y="2208" name="inst_14DD5B86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Snowman" x="384" y="2304" name="inst_B0113AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_InGameController" x="128" y="32" name="inst_A01AF2A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Particle_System" x="224" y="32" name="inst_AB3AD133" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_HUD" x="32" y="32" name="inst_9C914D31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_InGameController" x="16" y="0" name="inst_A01AF2A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Particle_System" x="32" y="0" name="inst_AB3AD133" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_HUD" x="0" y="0" name="inst_9C914D31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ladder" x="4320" y="1248" name="inst_383C5679" locked="0" code="" scaleX="0.766666650772095" scaleY="0.702499985694885" colour="4294967295" rotation="0"/>
     <instance objName="obj_Powerup_Fire" x="2336" y="1888" name="inst_BBAA958A" locked="0" code="" scaleX="0.668393790721893" scaleY="0.622568070888519" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Controller" x="320" y="32" name="inst_E537D55B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Controller" x="48" y="0" name="inst_E537D55B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_PauseControl" x="0" y="16" name="inst_E5164678" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

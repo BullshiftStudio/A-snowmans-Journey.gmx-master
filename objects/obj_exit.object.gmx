@@ -128,13 +128,7 @@ image_yscale = image_xscale;
             <kind>1</kind>
             <string>///Execute Action
 
-switch (txt) {
-
-  case "QUIT":
-        game_end();
-    break;
-
-}
+game_end();
 
 </string>
           </argument>

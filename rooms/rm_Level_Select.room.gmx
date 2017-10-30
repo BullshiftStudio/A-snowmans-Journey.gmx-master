@@ -9,7 +9,7 @@
   <speed>60</speed>
   <persistent>0</persistent>
   <colour>16777088</colour>
-  <showcolour>-1</showcolour>
+  <showcolour>0</showcolour>
   <code></code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="cloud_red" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -52,11 +52,11 @@
   </views>
   <instances>
     <instance objName="obj_LevelSelect" x="640" y="128" name="inst_B32E05BB" locked="0" code="" scaleX="0.691999971866608" scaleY="0.540000021457672" colour="4294967295" rotation="0"/>
-    <instance objName="obj_LevelSelect_Button" x="160" y="256" name="inst_92DB8747" locked="0" code="txt = &quot;1&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_LevelSelect_Button" x="240" y="256" name="inst_4FA336D1" locked="0" code="txt = &quot;2&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_LevelSelect_Button" x="320" y="256" name="inst_D77E406F" locked="0" code="txt = &quot;3&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_LevelSelect_Button" x="400" y="256" name="inst_D63B8A64" locked="0" code="txt = &quot;4&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_LevelSelect_Button" x="480" y="256" name="inst_C4EA1959" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="160" y="256" name="inst_92DB8747" locked="0" code="txt = &quot;T&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="240" y="256" name="inst_4FA336D1" locked="0" code="txt = &quot;1&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="320" y="256" name="inst_D77E406F" locked="0" code="txt = &quot;2&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="400" y="256" name="inst_D63B8A64" locked="0" code="txt = &quot;3&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LevelSelect_Button" x="480" y="256" name="inst_C4EA1959" locked="0" code="txt = &quot;4&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_LevelSelect_Button" x="560" y="256" name="inst_74B698F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_LevelSelect_Button" x="640" y="256" name="inst_DAE99674" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_LevelSelect_Button" x="720" y="256" name="inst_F4113C7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -80,8 +80,7 @@
     <instance objName="obj_LevelSelect_Button" x="1040" y="336" name="inst_10D0A5BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_LevelSelect_Button" x="1120" y="336" name="inst_A391CF40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_LevelSelect_Button" x="1200" y="336" name="inst_B38E6125" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_LevelSelect_Button" x="64" y="256" name="inst_A6E4470D" locked="0" code="txt = &quot;Tutorial Level&quot;;&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_back" x="48" y="32" name="inst_28D4EFDE" locked="0" code="" scaleX="0.533333361148834" scaleY="0.439999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Back" x="16" y="16" name="inst_28D4EFDE" locked="0" code="" scaleX="0.533333361148834" scaleY="0.439999997615814" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

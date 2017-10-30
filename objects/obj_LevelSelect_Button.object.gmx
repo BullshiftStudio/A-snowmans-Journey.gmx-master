@@ -121,143 +121,29 @@ txt = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Execute Level tutorial
-
-switch (txt) {
-
-    case "Tutorial Level":
-        room_goto(rm_Tutorial);
-    break;
-    
-    //Add more Levels here . . .
-
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///Execute Level
 
 switch (txt) {
+
+    case "T":
+        room_goto(rm_Tutorial);
+    break;
 
     case "1":
         room_goto(rm_Level_1);
     break;
     
-    //Add more Levels here . . .
-
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Execute Level 2
-
-switch (txt) {
-
     case "2":
         room_goto(rm_Level_2);
     break;
     
-    //Add more Levels here . . .
-
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Execute Level 3
-
-switch (txt) {
-
     case "3":
         room_goto(rm_Level_3);
     break;
     
-    //Add more Levels here . . .
-
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Execute Level 4
-
-switch (txt) {
-
     case "4":
-        room_goto(rm_Level_4B0SS);
+        room_goto(rm_Boss);
     break;
-    
-    //Add more Levels here . . .
 
 }
 
@@ -287,7 +173,7 @@ switch (txt) {
 
 draw_self();
 
-draw_set_color(c_white);
+draw_set_color(c_black);
 draw_set_font(fnt_Button);
 
 draw_set_halign(fa_center);

@@ -107,7 +107,8 @@
       <sprite>sprites\spr_Settings</sprite>
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_LevelSelect_Button</sprite>
-      <sprite>sprites\spr_back</sprite>
+      <sprite>sprites\spr_Back</sprite>
+      <sprite>sprites\spr_CheckBox</sprite>
     </sprites>
     <sprites name="Enemy Assets">
       <sprite>sprites\spr_Evil_Snowman</sprite>
@@ -137,6 +138,7 @@
     <background>background\cloud_red</background>
     <background>background\b_Tutorial_Complete</background>
     <background>background\b_Level_Complete</background>
+    <background>background\b_Settings</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -190,11 +192,13 @@
     </objects>
     <objects name="Option and Button Assets">
       <object>objects\obj_Play</object>
-      <object>objects\obj_levelslct</object>
-      <object>objects\obj_back</object>
+      <object>objects\obj_LvlSlct</object>
+      <object>objects\obj_Back</object>
       <object>objects\obj_Exit</object>
       <object>objects\obj_LevelSelect_Button</object>
-      <object>objects\obj_settings</object>
+      <object>objects\obj_Settings</object>
+      <object>objects\obj_CheckFullscreen</object>
+      <object>objects\obj_GraphicsController</object>
     </objects>
     <objects name="Enemy Assets">
       <object>objects\obj_Evil_Snowman</object>
@@ -206,9 +210,12 @@
       <object>objects\obj_Controller</object>
       <object>objects\obj_InGameController</object>
       <object>objects\obj_ier</object>
+      <object>objects\obj_PauseControl</object>
+      <object>objects\obj_Paused</object>
     </objects>
     <objects name="Boss Assets">
       <object>objects\obj_King_Boss</object>
+      <object>objects\obj_BossSnowball</object>
     </objects>
     <objects name="MMtunes">
       <object>objects\obj_Menu_Radio</object>
@@ -238,8 +245,10 @@
       <room>rooms\rm_Level_1</room>
       <room>rooms\rm_Level_2</room>
       <room>rooms\rm_Level_3</room>
-      <room>rooms\rm_level_4BOSS</room>
+      <room>rooms\rm_Boss</room>
+      <room>rooms\rm_Level_Complete</room>
     </rooms>
+    <room>rooms\rm_Settings</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
